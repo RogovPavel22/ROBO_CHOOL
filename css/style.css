@@ -1,0 +1,787 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&display=swap');
+
+:root {
+    --color1: #fff;
+    --color2: #141024;
+    --color3: #D52027;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color2);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+p {
+    line-height: 160%;
+    margin: 0;
+}
+
+.section__title {
+    font-size: 50px;
+    margin-bottom: 60px;
+}
+
+/* -------------HEADER------------- */
+
+.header, .intro {
+    background-color: var(--color2);
+}
+
+.header__container {
+    max-width: 1744px;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.header__tel-btn {
+    margin-right: 10px;
+}
+
+.navbar-nav {
+    gap: 0 40px;
+    font-size: 20px;
+}
+
+.header__tel {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.header__tel, .navbar-brand, .nav-link, .navbar-brand:hover, .navbar-brand:focus, .nav-link:focus {
+    color: var(--color1); 
+}
+
+.header__tel:hover, .nav-link:hover {
+    color: var(--color3); 
+}
+
+.header__tel:active, .nav-link:active {
+    opacity: 0.8; 
+}
+
+/* -------------INTRO------------- */
+
+.intro {
+    padding-top: 160px;
+    color: var(--color1);
+}
+
+.intro__title {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.intro__subtitle {
+    font-size: 20px;
+    margin-bottom: 50px;
+    max-width: 478px;
+}
+
+.intro__btn {
+    color: var(--color1);
+    font-size: 18px;
+    background-color: var(--color3);
+    padding: 25px 54px;
+}
+
+.intro__btn:focus:active {
+    background-color: #D0282F;
+    opacity: 0.8;
+}
+
+.intro__btn:hover {
+    background-color: #EC3037;
+}
+
+/* -------------ABOUT------------- */
+
+.about, .coaches {
+    padding: 120px 0;
+}
+
+.about__text {
+    font-size: 30px;
+    margin-bottom: 60px;
+    max-width: 891px;
+}
+
+.about__namber {
+    max-width: 260px;
+    color: var(--color3);
+    font-size: 70px;
+    font-weight: 600;
+    
+}
+
+.about__card-text {
+    font-size: 16px;
+    max-width: 260px;
+}
+
+/* -------------RECEIVE------------- */
+
+.receive {
+    padding: 100px 0;
+    background-color: #F9F9F9;
+}
+
+.receive__card-item {
+    max-width: 360px;
+}
+
+.receive__card-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.receive__card-text {
+    color: rgba(20, 16, 36, 0.70);
+}
+
+.badge {
+    padding: 0;
+    top: -12px;
+    right: -34px;
+    cursor: pointer;
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--color1);
+    --bs-tooltip-color: var(--color2);
+}
+
+.tooltip-inner {
+    padding: 15px 20px;
+    max-width: 270px;
+    box-shadow: 0px 2px 8px 0px rgba(20, 16, 36, 0.10);
+    font-size: 16px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+/* -------------COACHES------------- */
+
+.card {
+    border: none;
+    width: 360px;
+}
+
+.card-body {
+    padding: 20px 0 0 0;
+}
+
+.card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    color: rgba(20, 16, 36, 0.70);
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.card-link {
+    text-decoration: none;
+    color: var(--color3);
+    font-size: 18px;
+    transition: all 0.2s;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+.card-link:active {
+    opacity: 0.7;
+}
+
+.coaches__modal-close {
+    color: rgba(20, 16, 36, 0.70);
+    font-size: 18px;
+    border: none;
+    padding: 0;
+    top: 40px;
+    right: 40px;
+}
+
+.btn-close {
+    top: 20px;
+    right: 20px;
+    --bs-btn-close-focus-shadow: 0;
+    display: none;
+}
+
+.modal-content {
+    padding-bottom: 40px;
+}
+
+.modal-header {
+    border: none;
+    padding: 40px 40px 0 40px;
+}
+
+.modal__header-row {
+    margin-bottom: 40px;
+}
+
+.modal__card-text {
+    margin-bottom: 10px;
+}
+
+.modal__foto {
+    padding: 0;
+    max-width: 160px;
+}
+
+.modal__description {
+    padding-left: 40px; 
+}
+
+.modal__social {
+    display: flex;
+    gap: 10px;
+}
+
+.modal__social a svg {
+    transition: fill 0.3s;
+}
+
+.modal__social a:hover svg {
+    fill: var(--color3);
+}
+
+.modal__divide {
+    margin: 0 40px;
+}
+
+.modal__navbar {
+    padding-top: 0;
+}
+
+.modal__navbar .navbar-toggler {
+    border: none;
+    font-size: 16px;
+    background-color: var(--color3);
+    color: #fff;
+    width: 100%;
+    border-radius: 0;
+    height: 46px;
+    
+}
+
+.modal__navbar .nav-link {
+    font-size: 20px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.modal__nav {
+    color: var(--color2);
+}
+
+.modal__nav:focus {
+    color: var(--color3);
+}
+
+.modal-body {
+    padding: 20px 40px 0 40px;
+    max-height: 300px;
+}
+
+.modal__body-text {
+    font-size: 20px;
+}
+
+.modal__block {
+    margin-bottom: 40px;
+}
+
+.modal__education-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.swiper {
+    margin-bottom: 60px;
+}
+
+.swiper-slide {
+    width: auto;
+}
+
+.swiper-button-left, .swiper-button-right {
+    cursor: pointer;
+    padding: 3.33px;
+}
+
+.swiper-button-left svg, .swiper-button-right svg {
+    transition: all 0.2s;
+}
+
+.swiper-button-left:hover svg, .swiper-button-right:hover svg {
+    fill: var(--color3);
+}
+
+.swiper-button-left:active svg, .swiper-button-right:active svg {
+    opacity: 0.8;
+}
+
+.swiper-pagination {
+    max-width: 360px;
+    height: 5px !important;
+    top: 50% !important;
+    left: 10px !important;
+    transform: translateY(-50%);
+    border-radius: 40px;
+    background: rgba(20, 16, 36, 0.08);
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background: var(--color2);
+    border-radius: 40px
+}
+
+/* -------------PRICE------------- */
+
+.price {
+    padding-bottom: 140px;
+}
+
+.price__card {
+    border-radius: 20px;
+    border: 1px solid rgba(20, 16, 36, 0.20);
+    padding: 40px;
+    transition: all 0.4s;
+    height: 460px;
+}
+
+.price__card-title {
+    font-size: 30px;
+    margin-bottom: 63px;
+}
+
+.price__card-amounta {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.price__card-text {
+    color: var(--color2);
+}
+
+.price__card-btn {
+    border: none;
+    font-size: 18px;
+    padding: 25px 0;
+    width: 280px;
+    background-color: var(--color3);
+    color: #fff;
+    margin-top: auto;
+}
+
+.price__card-btn:hover {
+    background-color: #EC3037;
+    color: #fff;
+}
+
+.price__card-btn:focus:active {
+    background-color: #D0282F;
+    color: #fff;
+}
+
+.price__card:hover {
+    transform: scale(1.1);
+    background-color: var(--color2);
+    color: #fff;
+}
+
+.price__card:hover .price__card-text {
+    color: #fff;
+}
+
+/* -------------REGISTRATION------------- */
+
+.registration {
+    padding: 87px 0;
+    background-color: var(--color3);
+    background-image: url(../img/Mask\ Group.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.registration__text-wrapper {
+    max-width: 476px;
+}
+
+.registration__title {
+    font-size: 36px;
+    line-height: 130%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.registration__subtitle {
+    font-size: 20px;
+}
+
+.registration__list {
+    max-width: 500px;
+    gap: 10px;
+}
+
+.registration__list input, .registration__list button {
+    height: 64px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+}
+
+.registration__list input {
+    padding: 19px 20px;
+}
+
+.registration__list button {
+    background-color: var(--color2);
+}
+
+.registration__list button:hover {
+    background-color: #202136;
+}
+
+.registration__list button:focus:active {
+    background-color: #191a2a;
+}
+
+
+/* -------------FOOTER------------- */
+
+.footer {
+    padding: 40px 0;
+    background-color: var(--color2);
+    color: #fff;
+}
+
+.footer__row-top {
+    margin-bottom: 5px;
+}
+
+.footer__logo {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.footer__tel {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--color1);
+}
+
+.footer__tel:hover {
+    color: var(--color3); 
+}
+
+.footer__tel:active {
+    opacity: 0.8; 
+}
+
+.footer__subtitle {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+/* -------------MEDIA------------- */
+
+@media (max-width: 1400px) {
+
+    .intro__title {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .card {
+        width: 300px;
+    }
+
+    .swiper-pagination {
+        max-width: 300px;
+    }
+
+    .price__card {
+        padding: 40px 20px;
+    }
+
+    .price__card-btn {
+        width: 260px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .receive__cards {
+        gap: 30px 0;
+    }
+
+    .section__title {
+        font-size: 40px;
+    }
+
+    .coaches__modal-close {
+        display: none;
+    }
+    
+    .btn-close {
+        display: block;
+    }
+
+    .card-title {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .modal__card-text {
+        font-size: 12px !important;
+    }
+
+    .modal__header-row {
+        margin-bottom: 20px;
+    }
+
+    .modal-body p {
+        font-size: 14px;
+    }
+
+    .modal__education-title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .modal__block {
+        margin-bottom: 20px;
+    }
+
+    .modal-body {
+        padding: 20px 20px 0 20px;
+        max-height: 200px;
+    }
+
+    .modal-header {
+        padding: 33px 20px 0 20px;
+    }
+
+    .modal__description {
+        padding-left: 10px;
+        padding-right: 0;
+    }
+
+    .modal__divide {
+        margin: 0 20px;
+    }
+
+    .modal__navbar .nav-link{
+        font-size: 14px;
+    }
+
+    .modal-content {
+        padding-bottom: 20px;
+    }
+
+    .price__card-title {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    .price__card {
+        height: 394px;
+    }
+
+    .price__cards {
+        gap: 30px 0;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .intro {
+        padding-bottom: 40px;
+    }
+
+    .navbar-brand {
+        font-size: 18px;
+    }
+
+    .intro {
+        padding-top: 101px;
+    }
+
+    .intro__title {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .intro__subtitle {
+        font-size: 16px;
+        margin-bottom: 20px;
+        max-width: 300px;
+    }
+
+    .intro__btn {
+        position: absolute;
+        bottom: 0;
+        right: 12px;
+        left: 12px;
+        font-size: 16px;
+    }
+
+    .price__card {
+        margin: 0 auto;
+        width: 300px !important;
+    }
+
+    .price__card:hover {
+        transform: scale(1);
+    }
+
+    .price {
+        padding-bottom: 60px;
+    }
+
+    .registration__title {
+        font-size: 30px;
+        line-height: 140%;
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+
+    .registration__row {
+        gap: 40px 0;
+    }
+
+    .registration__text-wrapper {
+        max-width: 300px;
+    }
+
+    .registration__subtitle {
+        font-size: 16px;
+        line-height: 160%;
+    }
+
+    .registration {
+        padding: 40px 0;
+        background-color: var(--color3);
+        background-image: none;
+    }
+
+    .footer__row-top {
+        gap: 20px 0;
+    }
+
+    .footer__row-top {
+        margin-bottom: 40px;
+    } 
+
+    .footer {
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .about, .coaches {
+        padding: 60px 0;
+    }
+
+    .about__cards {
+        gap: 30px;
+    }
+
+    .about__text {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    .about__namber {
+        font-size: 60px;
+    }
+
+    .section__title {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    .receive {
+        padding: 40px 0 52px;
+    }
+    
+    .receive__card-text {
+        font-size: 16px;
+    }
+    
+    .receive__card-title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .swiper__btn-arrow {
+        display: none !important;
+    }
+
+    .card {
+        width: 220px;
+    }
+
+    .swiper-pagination {
+        max-width: 96%;
+    }
+
+    .swiper {
+        margin-bottom: 40px;
+    }
+
+    .card-body {
+        font-size: 20px;
+    }
+
+    .card-text {
+        font-size: 14px;
+    }
+
+    .card-link {
+        font-size: 16px;
+    }
+
+    .footer__logo {
+        font-size: 18px;
+    }
+
+    .footer__tel {
+        font-size: 16px;
+    }
+
+    .footer__subtitle {
+        font-size: 14px;
+    }
+}
