@@ -93,9 +93,13 @@ p {
     padding: 25px 54px;
 }
 
-.intro__btn:focus:active {
-    background-color: #D0282F;
-    opacity: 0.8;
+.intro__btn:focus {
+    background-color: var(--color3);
+}
+
+.intro__btn:active {
+    background-color: #D0282F !important;
+    color: #fff;
 }
 
 .intro__btn:hover {
@@ -391,13 +395,18 @@ p {
     margin-top: auto;
 }
 
-.price__card-btn:hover {
-    background-color: #EC3037;
+.price__card-btn:focus {
+    background-color: var(--color3);
     color: #fff;
 }
 
-.price__card-btn:focus:active {
-    background-color: #D0282F;
+.price__card-btn:active {
+    background-color: #D0282F !important;
+    color: #fff;
+}
+
+.price__card-btn:hover {
+    background-color: #EC3037;
     color: #fff;
 }
 
@@ -456,16 +465,16 @@ p {
 
 .registration__list button {
     background-color: var(--color2);
+    color: #fff;
+}
+
+.registration__list button:active {
+    background-color: var(--color2) !important;
 }
 
 .registration__list button:hover {
     background-color: #202136;
 }
-
-.registration__list button:focus:active {
-    background-color: #191a2a;
-}
-
 
 /* -------------FOOTER------------- */
 
@@ -502,14 +511,6 @@ p {
     color: rgba(255, 255, 255, 0.70);
     font-size: 16px;
 }
-
-
-
-
-
-
-
-
 
 /* -------------MEDIA------------- */
 
@@ -751,6 +752,7 @@ p {
 
     .card {
         width: 220px;
+        height: 445px;
     }
 
     .swiper-pagination {
@@ -763,6 +765,8 @@ p {
 
     .card-body {
         font-size: 20px;
+        display: flex;
+        flex-direction: column;
     }
 
     .card-text {
@@ -771,6 +775,7 @@ p {
 
     .card-link {
         font-size: 16px;
+        margin-top: auto;
     }
 
     .footer__logo {
